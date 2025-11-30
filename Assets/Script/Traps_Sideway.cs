@@ -10,7 +10,7 @@ public class Traps_Sideway : MonoBehaviour
     private float leftEdge;
     private float rightEdge;
 
-    private void Aware()
+    private void Awake()
     {
         leftEdge = transform.position.x - movementDistance;
         rightEdge = transform.position.x + movementDistance;
@@ -27,16 +27,15 @@ public class Traps_Sideway : MonoBehaviour
             }
             else
                 moveingLeft = false;
-            
         }
         else
         {
             if (transform.position.x < rightEdge)
             {
-                moveingLeft = true;
+                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
             else
-                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
+                moveingLeft = true;
         }
     }
 
