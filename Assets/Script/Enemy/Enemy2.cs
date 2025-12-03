@@ -62,7 +62,7 @@ public class Enemy2 : MonoBehaviour
     {
         cooldownTimer = 0;
         bullets[FindBullet()].transform.position = firePoint.position;
-        bullets[FindBullet()].GetComponent<Projectile>().ActiveProjectile();
+        bullets[FindBullet()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
 
     private int FindBullet()
