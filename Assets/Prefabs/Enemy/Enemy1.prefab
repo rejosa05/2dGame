@@ -148,6 +148,10 @@ MonoBehaviour:
   startHealth: 3
   iFrameDuration: 0
   numberOfFlashes: 0
+  components:
+  - {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 3b5677523971a35498b56c571e5f89c2, type: 3}
+  hurtSound: {fileID: 8300000, guid: 2cf0e0b0a024e3b4faa440f00d5b06f6, type: 3}
 --- !u!114 &1303367680856690040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,8 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 2.5
-  colliderDistance: 0.18
   damage: 2
+  colliderDistance: 0.18
   boxCollider: {fileID: 1303367680856690041}
   playerLayer:
     serializedVersion: 2

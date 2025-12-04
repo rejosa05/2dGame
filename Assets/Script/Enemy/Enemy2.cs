@@ -18,6 +18,9 @@ public class Enemy2 : MonoBehaviour
     [Header ("Player Parameters")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
+
+    [Header ("Bullet Sound")]    
+    [SerializeField] private AudioClip bulletSound;
     private Animator anim;
     private EnemyPatrol enemyPatrol;
     public void Awake()
@@ -60,6 +63,7 @@ public class Enemy2 : MonoBehaviour
 
     private void RangeAttack()
     {
+        SoundManager.instance.PlaySound(bulletSound);
         cooldownTimer = 0;
         bullets[FindBullet()].transform.position = firePoint.position;
         bullets[FindBullet()].GetComponent<EnemyProjectile>().ActivateProjectile();

@@ -820,8 +820,16 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1303367680856690042, guid: 6d90492d09febac45a81204a02525612, type: 3}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cf0e0b0a024e3b4faa440f00d5b06f6, type: 3}
+    - target: {fileID: 1303367680856690042, guid: 6d90492d09febac45a81204a02525612, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b5677523971a35498b56c571e5f89c2, type: 3}
+    - target: {fileID: 1303367680856690042, guid: 6d90492d09febac45a81204a02525612, type: 3}
       propertyPath: components.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1303367680856690042, guid: 6d90492d09febac45a81204a02525612, type: 3}
       propertyPath: components.Array.data[0]
@@ -881,6 +889,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+  bulletSound: {fileID: 8300000, guid: 82ce573c85f049c41a656416f06396bd, type: 3}
 --- !u!114 &4176353029669578939
 MonoBehaviour:
   m_ObjectHideFlags: 0
