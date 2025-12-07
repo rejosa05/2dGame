@@ -9,6 +9,8 @@ public class HealthCollectible : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            QuizManager.instance.ShowRandomQuestion();
+            gameObject.SetActive(false);
             SoundManager.instance.PlaySound(collectSound);
             collision.GetComponent<Health>().AddHealth(healthValue);
             gameObject.SetActive(false);
