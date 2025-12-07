@@ -60,7 +60,18 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startHealth);
     }
+    
+    public void Respawn()
+    {
+        dead = false;
+        AddHealth(startHealth);
+        anim.ResetTrigger("die");
+        anim.Play("idle");
+        StartCoroutine(Invunerability());
 
+        foreach (Behaviour component in components)
+            component.enabled = true;
+    }
     private IEnumerator Invunerability()
     {   
         // invulnerable = true;
