@@ -124,3 +124,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthValue: 1
   collectSound: {fileID: 8300000, guid: 14a3e999c63d68a419b7d8e8d3bea138, type: 3}
+  correctSound: {fileID: 8300000, guid: 14a3e999c63d68a419b7d8e8d3bea138, type: 3}
+  wrongSound: {fileID: 8300000, guid: 2cf0e0b0a024e3b4faa440f00d5b06f6, type: 3}

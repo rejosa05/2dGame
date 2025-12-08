@@ -5,21 +5,50 @@ public class HealthCollectible : MonoBehaviour
     [SerializeField] private float healthValue;
     [SerializeField] private AudioClip collectSound;
 
+    [SerializeField] private AudioClip correctSound; // play if correct
+    [SerializeField] private AudioClip wrongSound;   // play if wrong
+
+    private bool waitingForAnswer = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player") && !waitingForAnswer)
         {
-            QuizManager.instance.ShowRandomQuestion();
-            gameObject.SetActive(false);
-            SoundManager.instance.PlaySound(collectSound);
-            collision.GetComponent<Health>().AddHealth(healthValue);
-            gameObject.SetActive(false);
-            // Health playerHealth = collision.GetComponent<Health>();
-            // if (playerHealth != null)
-            // {
-            //     playerHealth.TakeDamage(-healthAmount); // Negative damage to heal
-            //     Destroy(gameObject); // Destroy the collectible after use
-            // }
+            waitingForAnswer = true;
+
+            QuizManager.instance.StartQuestion(this);
         }
+    }
+
+    // Called if ANSWER is CORRECT
+    public void OnCorrectAnswer(Collider2D player)
+    {
+        player.GetComponent<Health>().AddHealth(healthValue);
+
+        // Correct sound
+        if (correctSound != null)
+            SoundManager.instance.PlaySound(correctSound);
+
+        // Collect sound
+        SoundManager.instance.PlaySound(collectSound);
+
+        gameObject.SetActive(false);
+        waitingForAnswer = false;
+    }
+
+    // Called if ANSWER is WRONG
+    public void OnWrongAnswer()
+    {
+        // Play wrong sound
+        if (wrongSound != null)
+            SoundManager.instance.PlaySound(wrongSound);
+
+        // Shake screen / UI
+        // ShakeManager.instance.Shake();
+
+        waitingForAnswer = false;
+
+        // Still remove the collectible
+        gameObject.SetActive(false);
     }
 }

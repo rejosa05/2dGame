@@ -15,8 +15,29 @@ MonoBehaviour:
   questions:
   - prompt: Kailan nagsimula ang Unang Digmaang Pandaigdig?
     options:
-    - 1910
-    - 1914
-    - 1916
-    - 1918
-    answer: 1
+    - A. 1910
+    - B. 1914
+    - C. 1916
+    - D. 1918
+    answer: 2
+  - prompt: Ano ang pangunahing dahilan ng pagsiklab ng WWI?
+    options:
+    - A. Pagbagsak ng Ekonomiya
+    - B. Pagpatay kay Archduke Franz Ferdinand
+    - C. Paglusob ng Germany sa Poland
+    - D. Labanan sa Pearl Harbor
+    answer: 3
+  - prompt: Alin ang tawag sa alyansa ng Germany, Austria-Hungary, at Ottoman Empire?
+    options:
+    - A. Allied Powers
+    - B. Axis Powers
+    - C. Central Powers
+    - D. United Nations
+    answer: 4
+  - prompt: Ano ang tawag sa mapayapang kasunduang nagtapos sa WWI?
+    options:
+    - A. Treaty of Paris
+    - B. Treaty of Versailles
+    - C. Yalta Conference
+    - D. Potsdam Agreement
+    answer: 3
