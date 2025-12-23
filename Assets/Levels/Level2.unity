@@ -3519,6 +3519,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.502851, y: 1.7852569}
   m_EdgeRadius: 0
+--- !u!114 &366352983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9157861764756736795, guid: 797591d27aeae4841958cca963a2494a, type: 3}
+  m_PrefabInstance: {fileID: 9157861765656201424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6441c4d927172c243905b612899cc2b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &368482035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5078,7 +5089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477151528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.59999907, y: 1.2299998, z: 4.8907547}
+  m_LocalPosition: {x: -0.66999876, y: 0.50999975, z: 4.8907547}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 313595669}
@@ -9175,7 +9186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964145694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.59999865, y: -0.3700001, z: 4.8907547}
+  m_LocalPosition: {x: -0.66999835, y: -1.0900002, z: 4.8907547}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 313595669}
@@ -17398,11 +17409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5952552920005347544, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.77
+      value: 38.49
       objectReference: {fileID: 0}
     - target: {fileID: 5952552920005347544, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.33
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 5952552920005347544, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17439,6 +17450,22 @@ PrefabInstance:
     - target: {fileID: 5952552920005347548, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
       propertyPath: m_Name
       value: Saw (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952552920005347550, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
+      propertyPath: m_Size.x
+      value: 0.20310004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952552920005347550, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
+      propertyPath: m_Size.y
+      value: 0.109888405
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952552920005347550, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009027161
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952552920005347550, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0200558
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54625ac7f69222d4aa2c8e36b40b6204, type: 3}
@@ -20538,7 +20565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968160224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6, y: -1.97, z: 4.8907547}
+  m_LocalPosition: {x: -0.67, y: -2.69, z: 4.8907547}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 313595669}
@@ -23822,8 +23849,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 483126813}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 366352983}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
         m_MethodName: AttackButton
         m_Mode: 1
         m_Arguments:
@@ -24846,6 +24873,10 @@ PrefabInstance:
     - target: {fileID: 9157861764756736792, guid: 797591d27aeae4841958cca963a2494a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157861764756736793, guid: 797591d27aeae4841958cca963a2494a, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9157861764756736795, guid: 797591d27aeae4841958cca963a2494a, type: 3}
       propertyPath: bullets.Array.data[0]

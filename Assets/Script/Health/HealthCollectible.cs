@@ -14,8 +14,13 @@ public class HealthCollectible : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !waitingForAnswer)
         {
-            waitingForAnswer = true;
+            if (QuizManager.instance == null)
+            {
+                Debug.LogError("QuizManager instance is NULL!");
+                return;
+            }
 
+            waitingForAnswer = true;
             QuizManager.instance.StartQuestion(this);
         }
     }
@@ -23,14 +28,17 @@ public class HealthCollectible : MonoBehaviour
     // Called if ANSWER is CORRECT
     public void OnCorrectAnswer(Collider2D player)
     {
-        player.GetComponent<Health>().AddHealth(healthValue);
+        Health health = player.GetComponent<Health>();
+        if (health != null)
+            health.AddHealth(healthValue);
+        else
+            Debug.LogError("Player has no Health script!");
 
-        // Correct sound
-        if (correctSound != null)
+        if (correctSound != null && SoundManager.instance != null)
             SoundManager.instance.PlaySound(correctSound);
 
-        // Collect sound
-        SoundManager.instance.PlaySound(collectSound);
+        if (collectSound != null && SoundManager.instance != null)
+            SoundManager.instance.PlaySound(collectSound);
 
         gameObject.SetActive(false);
         waitingForAnswer = false;

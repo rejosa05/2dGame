@@ -9121,6 +9121,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7661558029889462410, guid: 50453ab08947aa54ea86df76ee6804d4, type: 3}
   m_PrefabInstance: {fileID: 1797278105}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1063560891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9157861764756736795, guid: 797591d27aeae4841958cca963a2494a, type: 3}
+  m_PrefabInstance: {fileID: 9157861765656201424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6441c4d927172c243905b612899cc2b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064593205
 GameObject:
   m_ObjectHideFlags: 0
@@ -17237,8 +17248,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 964885947}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 1063560891}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
         m_MethodName: AttackButton
         m_Mode: 1
         m_Arguments:
@@ -21960,11 +21971,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157861764756736793, guid: 797591d27aeae4841958cca963a2494a, type: 3}
       propertyPath: speed
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9157861764756736793, guid: 797591d27aeae4841958cca963a2494a, type: 3}
       propertyPath: joystick
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157861764756736793, guid: 797591d27aeae4841958cca963a2494a, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9157861764756736795, guid: 797591d27aeae4841958cca963a2494a, type: 3}
       propertyPath: bullets.Array.data[0]
