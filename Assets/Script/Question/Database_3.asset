@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101e2947b29938d4e8cfc0194dbb00d1, type: 3}
+  m_Name: Database_3
+  m_EditorClassIdentifier: 
+  questions:
+  - prompt: Kailan nagsimula ang WWII?
+    options:
+    - A. Poland
+    - B. France
+    - C. Britain
+    - D. Belgium
+    answer: 2
+  - prompt: Sino ang diktador ng Germany?
+    options:
+    - A. Benito Mussolini
+    - B. Adolf Hitler
+    - C. Joseph Stalin
+    - D. Winston Churchill
+    answer: 3
+  - prompt: Ano ang pangalan ng alyansang binuo ng Germany, Italy, at Japan?
+    options:
+    - A. Central Powers
+    - B. Axis Powers
+    - C. Allied Forces
+    - D. NATO
+    answer: 1
+  - prompt: Ano ang tinaguriang turning point ng laban sa Pasipiko?
+    options:
+    - A. Pearl Harbor
+    - B. Battle of Midway
+    - C. Battle of Stalingrad
+    - D. D-Day
+    answer: 3
+  - prompt: Kailan sinalakay ng Japan ang Pearl Harbor?
+    options:
+    - A. Disyembre 7, 1941
+    - B. Setyembre 1, 1939
+    - C. Hunyo 6, 1944
+    - D. Agosto 6, 1945
+    answer: 2
+  - prompt: Sino ang Punong Ministro ng Britain noong WWII?
+    options:
+    - A. Neville Chamberlain
+    - B. Winston Churchill
+    - C. Franklin Roosevelt
+    - D. Charles de Gaulle
+    answer: 3
+  - prompt: Saan naganap ang D-Day invasion?
+    options:
+    - A. Normandy, France
+    - B. Berlin, Germany
+    - C. Rome, Italy
+    - D. Tokyo, Japan
+    answer: 2
+  - prompt: Ano ang codename ng proyektong lumikha ng atomic bomb?
+    options:
+    - A. Eagle Project
+    - B. Manhattan Project
+    - C. Apollo Mission
+    - D. Axis Plan
+    answer: 3
+  - prompt: Sino ang lider ng Soviet Union noong WWII?
+    options:
+    - A. Nikita Khrushchev
+    - B. Joseph Stalin
+    - C. Vladimir Lenin
+    - D. Leon Trotsky
+    answer: 3
+  - prompt: Ang Treaty of Versailles ang nagtapos ng WWI.
+    options:
+    - Tama
+    - Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 1

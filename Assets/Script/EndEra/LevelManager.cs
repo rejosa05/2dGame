@@ -3,26 +3,57 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance;
+    [SerializeField] public static LevelManager instance;
 
-    public GameObject levelCompletePanel;
+    [Header("UI")]
+    [SerializeField] public GameObject congratulationsPanel;
+    [SerializeField] public AudioClip winMusic;
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        if (congratulationsPanel != null)
+            congratulationsPanel.SetActive(false);
     }
 
     public void LevelComplete()
     {
-        levelCompletePanel.SetActive(true);
-        Time.timeScale = 0f;
-        Debug.Log("LEVEL COMPLETE");
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        int totalScenes = SceneManager.sceneCountInBuildSettings;
+
+        // ✅ IF LAST LEVEL
+        if (currentScene == totalScenes - 1)
+        {
+            ShowCongratulations();
+        }
+        else
+        {
+            SceneManager.LoadScene(currentScene + 1);
+        }
     }
 
-    public void NextLevel()
+    void ShowCongratulations()
+    {
+        Time.timeScale = 0f; // pause game
+        congratulationsPanel.SetActive(true);
+
+        if(winMusic != null)
+            SoundManager.instance.PlaySound(winMusic);
+
+        Time.timeScale = 0f;
+    }
+
+    // BUTTON FUNCTION
+    public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene("_MainMenu");
     }
 }

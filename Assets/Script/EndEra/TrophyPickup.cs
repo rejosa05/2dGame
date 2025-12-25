@@ -6,9 +6,8 @@ public class TrophyPickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            LevelManager.instance.LevelComplete();  // ← mao ni ang line 9 nimo
+            LevelManager.instance.LevelComplete();
             Destroy(gameObject);
         }
     }
-
 }
