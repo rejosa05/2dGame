@@ -3,11 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] public static LevelManager instance;
+    public static LevelManager instance;
 
-    [Header("UI")]
-    [SerializeField] public GameObject congratulationsPanel;
-    [SerializeField] public AudioClip winMusic;
+    [Header("UI Panels")]
+    [SerializeField] private GameObject LevelCompletePanel;
+    [SerializeField] private GameObject congratulationsPanel;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip winMusic;
 
     private void Awake()
     {
@@ -19,38 +22,62 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        if (LevelCompletePanel != null)
+            LevelCompletePanel.SetActive(false);
+
         if (congratulationsPanel != null)
             congratulationsPanel.SetActive(false);
     }
 
+    // CALL THIS WHEN LEVEL IS FINISHED
     public void LevelComplete()
     {
+        Time.timeScale = 0f; // pause game
+
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         int totalScenes = SceneManager.sceneCountInBuildSettings;
 
-        // ✅ IF LAST LEVEL
+        // ✅ LAST LEVEL → CONGRATULATIONS
         if (currentScene == totalScenes - 1)
         {
             ShowCongratulations();
         }
+        // ✅ NOT LAST LEVEL → NEXT ERA POPUP
         else
         {
-            SceneManager.LoadScene(currentScene + 1);
+            ShowNextEra();
         }
-    }
 
-    void ShowCongratulations()
-    {
-        Time.timeScale = 0f; // pause game
-        congratulationsPanel.SetActive(true);
-
-        if(winMusic != null)
+        if (winMusic != null)
             SoundManager.instance.PlaySound(winMusic);
-
-        Time.timeScale = 0f;
     }
 
-    // BUTTON FUNCTION
+    // ================= UI FUNCTIONS =================
+
+    private void ShowNextEra()
+    {
+        if (LevelCompletePanel != null)
+            LevelCompletePanel.SetActive(true);
+    }
+
+    private void ShowCongratulations()
+    {
+        if (congratulationsPanel != null)
+            congratulationsPanel.SetActive(true);
+    }
+
+    // ================= BUTTON FUNCTIONS =================
+
+    // BUTTON: Continue to Next Era
+    public void GoToNextEra()
+    {
+        Time.timeScale = 1f;
+
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
+    }
+
+    // BUTTON: Back to Main Menu
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
