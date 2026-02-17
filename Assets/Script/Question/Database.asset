@@ -20,22 +20,22 @@ MonoBehaviour:
       ang suportang medikal
     - B) Dahil sa kakulangan ng pagkain at medikal na tulong, maraming sundalo ang
       hindi nakaligtas sa sugat at sakit.
-    - B) Dahil sa kakulangan ng pagkain at medikal na tulong, maraming sundalo ang
-      hindi nakaligtas sa sugat at sakit.
+    - C) Patuloy na pagbobomba at paggamit ng machine guns ng kaaway, na nagdulot
+      ng maraming sugat sa trenches
     - D) Mahina ang koordinasyon sa mga hakbang at limitadong proteksyon kaya marami
       ang nasawi.
     answer: 1
-  - prompt: Ano ang pangunahing dahilan ng pagsiklab ng WWI?D) Mahina ang koordinasyon
-      sa mga hakbang at limitadong proteksyon kaya marami ang nasawi.
+  - prompt: Aling estratehiya ang karaniwang ginagamit sa panahon ng Unang Digmaang
+      Pandaigdig?
     options:
     - 'A) Pananakit sa ilalim ng trenches kung saan nakaposisyon ang mga sundalo
       at sinisikap lusubin ang depensang linya ng kaaway '
     - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
       sa pangunahing depensa ng kaaway.
-    - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
-      sa pangunahing depensa ng kaaway.
-    - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
-      sa pangunahing depensa ng kaaway.
+    - 'C) Pagsalakay gamit ang baril ng maliliit na grupo na nagreresulta sa mababang
+      bisa ng operasyon at mataas na antas ng panganib. '
+    - D) Pagbomba mula sa eroplano sa malalayong lugar, na kadalasan ay limitado
+      ang epekto sa labanan.
     answer: 1
   - prompt: Bakit nananatili ang mga sundalo sa trenches ng ilang linggo sa panahon
       ng digmaan?
@@ -43,7 +43,8 @@ MonoBehaviour:
     - A) Bilang bahagi ng defensive strategy, ginagamit ang trenches upang protektahan
       ang mga sundalo
     - B) Upang masubaybayan ang galaw ng kalaban at maghanda sa hindi planadong atake.
-    - B) Upang masubaybayan ang galaw ng kalaban at maghanda sa hindi planadong atake.
+    - C) Bilang paraan upang magpahinga at mag-ayos ng kagamitan habang naghihintay
+      ng sunod na utos.
     - D) Dahil sa kakulangan ng armas, nagiging limitado ang kanilang kakayahan sumugod
       at lumaban.
     answer: 1
@@ -153,4 +154,185 @@ MonoBehaviour:
     - B) Mas mabilis na palitan ng impormasyon
     - C) Pinabagal ang pagpapadala ng tulong at supplies.
     - D) Ginamit lang bilang libangan ng mga sundalo.
+    answer: 2
+  - prompt: Isang kasamahan ang nasugatan sa ilalim ng pag-atake ng kaaway. Ano ang
+      dapat gawin?
+    options:
+    - A) Tumakas at bumalik sa kampo para magpahinga.
+    - B) Sagipin at bigyan ng agarang lunas habang inaalagaan ang sariling kaligtasan
+    - C) Sumuko upang matapos na ang labanan.
+    - D) Iwan ang kasamahan at protektahan ang sarili lamang.
+    answer: 2
+  - prompt: May mga sibilyan na nasawi habang sumusulong sa misyon. Ano ang tamang
+      hakbang?
+    options:
+    - A) Balewalain ang mga nasawi at ipagpatuloy ang misyon.
+    - B) Sundin ang utos nang walang pakialam.
+    - C) Umatras at bumalik sa kampo upang maging ligtas.
+    - D) Protektahan ang mga sibilyan at tiyakin ang kanilang kaligtasan
+    answer: 4
+  - prompt: Aling katangian ang pinakamahusay na naglalarawan sa mga bayani sa trenches?
+    options:
+    - A) Tapang at kahandaang harapin ang panganib para sa misyon
+    - B) Pagsunod sa utos nang walang tanong.
+    - C) Makasarili, inuuna ang sarili kaysa sa grupo.
+    - D) Walang plano at pabaya sa aksyon.
+    answer: 1
+  - prompt: Nakakita ka ng sugatang sundalo ng kalaban. Ano ang dapat gawin?
+    options:
+    - A) Agad siyang atakihin at maghiganti sa kalaban.
+    - B) Tulungan kung posible, ngunit panatilihin ang sariling kaligtasan
+    - C) Gawin siyang bihag para mapakinabangan.
+    - D) Iwan at protektahan ang sarili lamang.
+    answer: 2
+  - prompt: Bakit madalas nanganganib ang buhay ng mga Pilipinong gerilya para sa
+      lokal na komunidad?
+    options:
+    - A) Lumalaban sila sa kaaway upang protektahan ang komunidad
+    - B) Dahil sa kakulangan ng kagamitan at suporta, ngunit hindi handa sa sakripisyo
+    - C) Dahil palaging nasa panganib kahit hindi aktibong lumalaban
+    - D) Dahil sa tuloy-tuloy na banta ng kaaway sa kanilang lugar
+    answer: 1
+  - prompt: Bakit mahalaga ang alyansa tulad ng France, UK, at US sa digmaan?
+    options:
+    - A) Nagpabawas ng labanan at casualties.
+    - B) Nagbigay ng estratehikong suporta at resources sa mga kaalyado
+    - C) Simboliko lamang, walang direktang epekto sa labanan.
+    - D) Pinabilis ang digmaan dahil sa pagtaas ng pwersa.
+    answer: 2
+  - prompt: Aling bansa ang sumali sa Axis sa WWII?
+    options:
+    - A) Japan
+    - B) Canada
+    - C) UK
+    - D) Australia
+    answer: 1
+  - prompt: Paano nakapagpalala ng digmaan ang mga alyansa?
+    options:
+    - A) Nagdulot ng mas kumplikadong estratehiya
+    - B) Wala, walang epekto ang alyansa sa digmaan.
+    - C) Propaganda lamang, walang direktang epekto sa labanan.
+    - D) Pinabagal ang reinforcement dahil sa maling komunikasyon.
+    answer: 1
+  - prompt: Bakit mahalaga ang pakikipagtulungan ng Pilipino at Amerikano sa WWII?
+    options:
+    - A) Nagbigay ng pinagsamang lakas militar sa paglaban sa Hapon
+    - B) Pinadali ang pag abante ng mga kaaway.
+    - C) Walang epekto sa pangkalahatang digmaan.
+    - D) Tumaas lamang ang casualties sa front line.
+    answer: 1
+  - prompt: Ano ang ipinakita ng paglaya ng Manila Bay?
+    options:
+    - 'A) Koordinasyon ng hukbong pandagat at hukbong lupa '
+    - B) Air strikes lamang ang nagdala ng tagumpay.
+    - C) Pagbalewala sa sibilyan para makamit ang layunin.
+    - D) Sumuko ang kaaway nang hindi nakipaglaban.
+    answer: 1
+  - prompt: Ang isang baryo ay binomba. Ano ang dapat unahin?
+    options:
+    - A) Magnakaw ng supplies sa gusali.
+    - B) Tulungan ang sibilyan at gamutin ang sugatan
+    - C) Balewalain ang pangyayari at ipagpatuloy ang misyon.
+    - D) Ipagdiwang ang tagumpay ng yunit.
+    answer: 2
+  - prompt: Ano ang pangmatagalang epekto ng digmaan sa tao at komunidad?
+    options:
+    - A) Mapayapang pagsasama-sama.
+    - B) Maraming refugee at pagkasira ng tahanan at imprastruktura
+    - C) Sobrang pagkain at supply sa lahat.
+    - D) Pagbuti ng mga kalsada lamang, wala nang iba.
+    answer: 2
+  - prompt: Bakit nagkakaroon ng epekto sa isip ang mga sundalo pagkatapos ng digmaan?
+    options:
+    - A) Gustong-gusto nila ang labanan.
+    - B) PTSD at trauma mula sa karanasan sa labanan
+    - C) Kawalan ng laro at libangan sa trenches.
+    - D) Madali lang ang digmaan, kaya walang epekto.
+    answer: 2
+  - prompt: Ano ang naranasan ng mga Pilipino sa Bataan Death March?
+    options:
+    - A) Walang epekto sa katawan o isip.
+    - B) Kakulangan sa pagkain, sakit, at pang-aabuso
+    - C) Agad na kaligtasan mula sa kaaway.
+    - D) Pagkilala lamang bilang bayani.
+    answer: 2
+  - prompt: Bakit mahalagang itala ang mga kwento ng digmaan?
+    options:
+    - A) Para sa aliw ng Kabataan at sa sumusunod na henerasyon.
+    - B) Para mapreserba ang kasaysayan at matuto sa aral
+    - C) Para lang sa libro, walang ibang gamit.
+    - D) Para kalimutan ang nakaraan at mag-move on agad.
+    answer: 2
+  - prompt: Natapos na ang digmaan. paano makakatulong ang komunidad sa muling pagbangon?
+    options:
+    - A) Balewalain ang sirang lugar at magpatuloy sa normal na buhay.
+    - B) Parusahan lamang ang kalaban at magbayad sa lahat ng nasira.
+    - C) Magtayo ng imprastruktura, paaralan, ospital, at mahahalagang pasilidad
+    - D) Magpatuloy sa labanan para makontrol ang resources at mga yamang mineral.
+    answer: 3
+  - prompt: Aling aral ang pinakamahalaga mula sa karanasan sa digmaan?
+    options:
+    - A) Paghihiganti laban sa kaaway ay walang patutunguhan.
+    - B) Pag-iwas sa pakikipag-ugnayan sa ibang bansa.
+    - C) Kapayapaan at pakikipagtulungan para maiwasan ang trahedya sa hinaharap
+    - D) Pagwawagi sa anumang paraan kahit mali.
+    answer: 3
+  - prompt: Ano ang ginawa ng mga Pilipinong lider para sa post-war rebuilding?
+    options:
+    - A) Balewalain ang nasirang lugar.
+    - B) Ipinanumbalik ang pamahalaan, edukasyon, at ospital
+    - C) Nagtuon lamang sa militar, hindi sa komunidad.
+    - D) Parusahan lamang ang mga mananakop.
+    answer: 2
+  - prompt: Paano makakatulong ang moral na desisyon sa digmaan sa hinaharap na henerasyon?
+    options:
+    - A) Hindi makakatulong sa pag-unawa ng tama at mali.
+    - B) Turuan ang empatiya, etika, at responsibilidad
+    - C) Ipinapakita lamang ang kahinaan ng sundalo.
+    - D) Hikayatin ang paghihiganti.
+    answer: 2
+  - prompt: Ano ang papel ng kabataan sa pag-alala at pagpapahalaga sa kasaysayan?
+    options:
+    - A) Matuto, mag-reflect, at ibahagi ang aral
+    - B) Balewalain ang nakaraan at mag-focus sa kasalukuyan.
+    - C) I-recreate ang labanan bilang laro lamang.
+    - D) Pag-aralan ang mapa at heograpiya lang.
+    answer: 1
+  - prompt: Aling Pilipinong heneral ang namuno sa gerilyang paglaban sa WWII?
+    options:
+    - A) Gen. MacArthur
+    - B) Gen. Vicente Lim
+    - C) Gen. Yamashita
+    - D) Gen. Pershing
+    answer: 2
+  - prompt: Kasama mo ang kasamahang sundalo na nais magnakaw ng supplies. Ano ang
+      dapat gawin?
+    options:
+    - A) Sumama sa kanya.
+    - B) Magbigay ng payo sa etikal at hikayatin ang tamang hakbang
+    - C) Balewalain ang sitwasyon.
+    - D) I-report mamaya sa commander kahit delikado.
+    answer: 2
+  - prompt: Nakakita ka ng dokumento ng kalaban na naglalaman ng plano para saktan
+      ang sibilyan. Ano ang dapat gawin?
+    options:
+    - A) Sirain ang dokumento.
+    - B) Isumbong at protektahan ang sibilyan
+    - C) Gamitin para sa paghihiganti.
+    - D) Balewalain dahil delikado at walang epekto.
+    answer: 2
+  - prompt: Madalas ang mga Pilipinong gerilya ay kailangang pumili sa pagitan ng
+      personal na kaligtasan o pagtulong sa sibilyan. Paano ito ilalarawan?
+    options:
+    - A) Pagpili sa pagitan ng sariling kaligtasan o pagtulong sa iba
+    - B) Atakihin lang ang sundalo ng kaaway at iwasan ang ibang responsibilidad.
+    - C) Iwasan lahat ng labanan at hindi lumahok.
+    - D) Sundin ang utos nang walang pag-iisip kahit mali.
+    answer: 1
+  - prompt: Bakit mahalaga ang pag-aaral ng kasaysayan ng Pilipino sa digmaan ngayon?
+    options:
+    - 'A) Para lang sa mga gawain sa paaralan. '
+    - B) Para ma-appreciate ang sakripisyo, matutunan ang tapang, at bumuo ng kapayapaan
+    - C) Para sa aliw at libangan lamang.
+    - D) Para lang sa history trivia nang walang praktikal na aral.
     answer: 2
