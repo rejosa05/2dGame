@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101e2947b29938d4e8cfc0194dbb00d1, type: 3}
+  m_Name: Database 1
+  m_EditorClassIdentifier: 
+  questions:
+  - prompt: Kailan nagsimula ang Unang Digmaang Pandaigdig?
+    options:
+    - A. 1910
+    - B. 1914
+    - C. 1916
+    - D. 1918
+    answer: 2
+  - prompt: Ano ang pangunahing dahilan ng pagsiklab ng WWI?
+    options:
+    - A. Pagbagsak ng Ekonomiya
+    - B. Pagpatay kay Archduke Franz Ferdinand
+    - C. Paglusob ng Germany sa Poland
+    - D. Labanan sa Pearl Harbor
+    answer: 3
+  - prompt: Alin ang tawag sa alyansa ng Germany, Austria-Hungary, at Ottoman Empire?
+    options:
+    - A. Allied Powers
+    - B. Axis Powers
+    - C. Central Powers
+    - D. United Nations
+    answer: 4
+  - prompt: Ano ang tawag sa mapayapang kasunduang nagtapos sa WWI?
+    options:
+    - A. Treaty of Paris
+    - B. Treaty of Versailles
+    - C. Yalta Conference
+    - D. Potsdam Agreement
+    answer: 3
+  - prompt: Anong bansa ang unang gumamit ng poison gas sa WWI?
+    options:
+    - A. Russia
+    - B. France
+    - C. Germany
+    - D. Britain
+    answer: 4
+  - prompt: Saan naganap ang kilalang Battle of the Somme?
+    options:
+    - A. Russia
+    - B. France
+    - C. Italy
+    - D. Austria
+    answer: 4
+  - prompt: Anong barko ang nilubog ng German U-boat na ikinagalit ng Amerika?
+    options:
+    - A. Titanic
+    - B. Lusitania
+    - C. Bismarck
+    - D. Yorktown
+    answer: 3
+  - prompt: Kailan pumasok ang Estados Unidos sa WWI?
+    options:
+    - A. 1914
+    - B. 1917
+    - C. 1918
+    - D. 1920
+    answer: 3
+  - prompt: Anong prinsipyong politikal ang itinaguyod ni Woodrow Wilson?
+    options:
+    - A. Truman Doctrine
+    - B. 14 Points
+    - C. League Charter
+    - D. Atlantic Charter
+    answer: 3
+  - prompt: Ano ang pangunahing dahilan ng Italy sa paglipat mula sa Central Powers
+      tungo sa Allied Powers?
+    options:
+    - A. Mas malaking teritoryo ang ipinangako
+    - B. Pagkakaibigan sa France
+    - C. Pagbagsak ng ekonomiya
+    - D. Udyok ng Amerika
+    answer: 3
+  - prompt: Nagsimula ang WWI noong 1914.
+    options:
+    - A. Tama
+    - B. Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 1
+  - prompt: Ang Allied Powers ay binubuo ng Germany, Austria-Hungary, at Ottoman
+      Empire.
+    options:
+    - A. Tama
+    - B. Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 2
+  - prompt: Ang pagpatay kay Archduke Franz Ferdinand ang naging mitsa ng digmaan.
+    options:
+    - A. Tama
+    - B. Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 1
+  - prompt: Ang Estados Unidos ay sumali agad sa simula ng WWI.
+    options:
+    - A. Tama
+    - B. Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 2
+  - prompt: Ang Treaty of Versailles ang nagtapos ng WWI.
+    options:
+    - Tama
+    - Mali
+    - C. Hindi ko alam
+    - D. Hindi sigurado
+    answer: 1

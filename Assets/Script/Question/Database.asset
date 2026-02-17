@@ -13,110 +13,144 @@ MonoBehaviour:
   m_Name: Database
   m_EditorClassIdentifier: 
   questions:
-  - prompt: Kailan nagsimula ang Unang Digmaang Pandaigdig?
+  - prompt: Kailan nagsimula ang Unang Digmaang Pandaigdig?Kung ikaw ay nasa Labanan
+      sa Somme, ano ang naging sanhi ng mataas na bilang ng nasawi sa digmaan?
     options:
-    - A. 1910
-    - B. 1914
-    - C. 1916
-    - D. 1918
-    answer: 2
-  - prompt: Ano ang pangunahing dahilan ng pagsiklab ng WWI?
-    options:
-    - A. Pagbagsak ng Ekonomiya
-    - B. Pagpatay kay Archduke Franz Ferdinand
-    - C. Paglusob ng Germany sa Poland
-    - D. Labanan sa Pearl Harbor
-    answer: 3
-  - prompt: Alin ang tawag sa alyansa ng Germany, Austria-Hungary, at Ottoman Empire?
-    options:
-    - A. Allied Powers
-    - B. Axis Powers
-    - C. Central Powers
-    - D. United Nations
-    answer: 4
-  - prompt: Ano ang tawag sa mapayapang kasunduang nagtapos sa WWI?
-    options:
-    - A. Treaty of Paris
-    - B. Treaty of Versailles
-    - C. Yalta Conference
-    - D. Potsdam Agreement
-    answer: 3
-  - prompt: Anong bansa ang unang gumamit ng poison gas sa WWI?
-    options:
-    - A. Russia
-    - B. France
-    - C. Germany
-    - D. Britain
-    answer: 4
-  - prompt: Saan naganap ang kilalang Battle of the Somme?
-    options:
-    - A. Russia
-    - B. France
-    - C. Italy
-    - D. Austria
-    answer: 4
-  - prompt: Anong barko ang nilubog ng German U-boat na ikinagalit ng Amerika?
-    options:
-    - A. Titanic
-    - B. Lusitania
-    - C. Bismarck
-    - D. Yorktown
-    answer: 3
-  - prompt: Kailan pumasok ang Estados Unidos sa WWI?
-    options:
-    - A. 1914
-    - B. 1917
-    - C. 1918
-    - D. 1920
-    answer: 3
-  - prompt: Anong prinsipyong politikal ang itinaguyod ni Woodrow Wilson?
-    options:
-    - A. Truman Doctrine
-    - B. 14 Points
-    - C. League Charter
-    - D. Atlantic Charter
-    answer: 3
-  - prompt: Ano ang pangunahing dahilan ng Italy sa paglipat mula sa Central Powers
-      tungo sa Allied Powers?
-    options:
-    - A. Mas malaking teritoryo ang ipinangako
-    - B. Pagkakaibigan sa France
-    - C. Pagbagsak ng ekonomiya
-    - D. Udyok ng Amerika
-    answer: 3
-  - prompt: Nagsimula ang WWI noong 1914.
-    options:
-    - A. Tama
-    - B. Mali
-    - C. Hindi ko alam
-    - D. Hindi sigurado
+    - A) Kombinasyon ng trench warfare, matinding paggamit ng machine guns, at limitado
+      ang suportang medikal
+    - B) Dahil sa kakulangan ng pagkain at medikal na tulong, maraming sundalo ang
+      hindi nakaligtas sa sugat at sakit.
+    - B) Dahil sa kakulangan ng pagkain at medikal na tulong, maraming sundalo ang
+      hindi nakaligtas sa sugat at sakit.
+    - D) Mahina ang koordinasyon sa mga hakbang at limitadong proteksyon kaya marami
+      ang nasawi.
     answer: 1
-  - prompt: Ang Allied Powers ay binubuo ng Germany, Austria-Hungary, at Ottoman
-      Empire.
+  - prompt: Ano ang pangunahing dahilan ng pagsiklab ng WWI?D) Mahina ang koordinasyon
+      sa mga hakbang at limitadong proteksyon kaya marami ang nasawi.
     options:
-    - A. Tama
-    - B. Mali
-    - C. Hindi ko alam
-    - D. Hindi sigurado
-    answer: 2
-  - prompt: Ang pagpatay kay Archduke Franz Ferdinand ang naging mitsa ng digmaan.
-    options:
-    - A. Tama
-    - B. Mali
-    - C. Hindi ko alam
-    - D. Hindi sigurado
+    - 'A) Pananakit sa ilalim ng trenches kung saan nakaposisyon ang mga sundalo
+      at sinisikap lusubin ang depensang linya ng kaaway '
+    - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
+      sa pangunahing depensa ng kaaway.
+    - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
+      sa pangunahing depensa ng kaaway.
+    - B) Di-inaasahang pagsalakay sa mga nayon na kadalasan ay hindi nakakaapekto
+      sa pangunahing depensa ng kaaway.
     answer: 1
-  - prompt: Ang Estados Unidos ay sumali agad sa simula ng WWI.
+  - prompt: Bakit nananatili ang mga sundalo sa trenches ng ilang linggo sa panahon
+      ng digmaan?
     options:
-    - A. Tama
-    - B. Mali
-    - C. Hindi ko alam
-    - D. Hindi sigurado
-    answer: 2
-  - prompt: Ang Treaty of Versailles ang nagtapos ng WWI.
-    options:
-    - Tama
-    - Mali
-    - C. Hindi ko alam
-    - D. Hindi sigurado
+    - A) Bilang bahagi ng defensive strategy, ginagamit ang trenches upang protektahan
+      ang mga sundalo
+    - B) Upang masubaybayan ang galaw ng kalaban at maghanda sa hindi planadong atake.
+    - B) Upang masubaybayan ang galaw ng kalaban at maghanda sa hindi planadong atake.
+    - D) Dahil sa kakulangan ng armas, nagiging limitado ang kanilang kakayahan sumugod
+      at lumaban.
     answer: 1
+  - prompt: Kung ikaw ay isang Pilipinong sundalo sa panahon ng pananakop ng Hapon,
+      sa aling hukbo ka lumalaban?
+    options:
+    - A) Mga pwersa lamang ng US Navy, na may limitadong kakayahan sa labanan sa
+      Pilipinas.
+    - B) Philippine Commonwealth Army, bilang pangunahing hukbong Pilipino laban
+      sa pananakop ng Hapon
+    - C) Mga lokal at nagboluntaryo na organisasyon na gumagawa lamang ng maliit
+      na operasyon sa nayon.
+    - D) Mga sundalo ng British sa Asya na hindi direktang nakikibahagi sa laban
+      sa Pilipinas.
+    answer: 2
+  - prompt: Aling labanan sa Ikalawang Digmaang Pandaigdig ang kinasangkutan ng mga
+      Pilipinong gerilya laban sa Hapon?
+    options:
+    - A) Battle of Normandy, kung saan pangunahing nakibahagi ang pwersa ng Allies
+      sa Europa.
+    - B) Battle of Midway, na nakatuon sa labanang pandagat sa Pasipiko.
+    - 'C) Battle of Bataan, kung saan ang mga Pilipino at Amerikano ay lumaban sa
+      Hapon '
+    - D) Battle of Stalingrad, isang pangunahing laban sa silangang bahagi ng Europa.
+    answer: 3
+  - prompt: Nahaharap ang mga sundalo sa putik, kuto, at ulan. Paano mapapataas ang
+      kanilang morale?
+    options:
+    - "A) Pag-oorganisa o pagpapadala ng liham sa pamilya upang mapanatili ang moral
+      ng mga sundalo\u2705"
+    - B) Pagpapahinga at pansamantalang pag-iwas sa labanan upang maiwasan ang stress.
+    - "C) Pagbabahagi ng rasyon at simpleng pagkain sa isa\u2019t isa para mapanatili
+      ang lakas."
+    - D) Pag-alis sa trenches at paghahanap ng mas ligtas na lugar kahit hindi nakaayos
+      ang istratehiya.
+    answer: 1
+  - prompt: Alin sa mga sumusunod ang karaniwang problema sa ilalim ng trenches?
+    options:
+    - A) Init mula sa labis na pagkakalantad sa araw sa labas ng trench.
+    - B) Kakulangan sa tulog dahil sa paglalakbay sa gabi at araw.
+    - C) Trench foot, sanhi ng matagal na basa at malamig na kondisyon na nagdudulot
+      ng impeksyon
+    - D) Heatstroke dahil sa kakulangan ng tubig at init sa labanan.
+    answer: 3
+  - prompt: Ano ang madalas na pinagbabatayan ng mga gerilyang Pilipino sa kanilang
+      pakikidigma?
+    options:
+    - A) Pagsunod sa direktiba ng mga banyagang pwersa nang walang sariling lokal
+      na plano.
+    - B) Mga sanay na sundalo lamang, dahil sa limitadong armas at pagsasanay.
+    - C) Kaalaman sa lokal na teritoryo, pag-unawa sa paligid, at paggamit ng taktika
+      na angkop sa kapaligiran
+    - D) Paggamit ng modernong tanks at armas sa bawat operasyon upang makipagsabayan
+      sa kaaway.
+    answer: 3
+  - prompt: Bakit mahirap ang komunikasyon sa trenches?
+    options:
+    - A) Tuloy-tuloy na pagbobomba at kaguluhan sa labanan
+    - B) Signal sa radio ay madalas nahaharangan ng kapaligiran at gusali.
+    - C) Walang telepono at limitadong signal sa lugar ng digmaan
+    - D) Sundalo mismo ay hindi interesado makipag-ugnayan sa ibang pangkat
+    answer: 1
+  - prompt: Ang isang gerilyang yunit ay nauubusan ng suplay. Ano ang tamang etikal
+      na hakbang?
+    options:
+    - A) Magnakaw sa mga sibilyan upang makakuha ng pagkain kahit walang pahintulot.
+    - B) Makipagpalitan o humingi ng tulong sa kaalyado at lokal na komunidad
+    - C) Atakihin ang kaalyado upang makuha ang suplay sa paraang hindi ligtas sa
+      komunidad.
+    - D) Agad na umatras at iwanan ang operasyon upang maiwasan ang pinsala sa yunit.
+    answer: 2
+  - prompt: Paano naiiba ang paggamit ng tanks at eroplano sa Unang Digmaang Pandaigdig
+      kumpara sa Ikalawang Digmaang Pandaigdig?
+    options:
+    - A) WWI ay nakasalalay sa trench at artillery kaya limitado ang estratehikong
+      kalamangan
+    - B) Mas maunlad ang teknolohiya sa WWI kumpara sa WWII.
+    - C) May nuclear weapons ang WWI na nagbago sa istratehiya.
+    - D) Hindi kasama ang mga sundalo sa WWI sa paggamit ng modernong kagamitan.
+    answer: 1
+  - prompt: Aling imbensyon ang nakatulong sa medikal na pangangalaga sa battlefield?
+    options:
+    - A) Granada at iba pang armas na ginagamit din sa mga operasyon.
+    - B) Ospital kung saan mabilis na naibibigay ang unang lunas sa mga sugatang
+      sundalo
+    - C) Radyo ang pangunahing ginagamit sa pang-aaliw sa mga sundalo sa trenches.
+    - D) Jet fighters na nagbibigay proteksyon sa medikal na pangkat.
+    answer: 2
+  - prompt: Bakit mahalaga ang mga submarines sa Ikalawang Digmaang Pandaigdig?
+    options:
+    - A) Paghadlang sa suplay na pumipigil sa kalaban na makakuha ng mga kagamitan
+    - B) Pagbomba sa mga lungsod at industriyal na lugar upang sirain ang ekonomiya.
+    - C) Pangunahing kontrol sa himpapawid laban sa kalaban
+    - D) Direktang labanan sa trenches sa harap ng linya ng digmaan
+    answer: 1
+  - prompt: Aling Pilipinong imbensyon ang nakatulong sa gerilya?
+    options:
+    - 'A) Bomba na ginagamit sa maliit at maingat na operasyon '
+    - B) Tanks na ginagamit sa malalaking labanan.
+    - C) Nuclear bombs na ginawa sa Pilipinas.
+    - D) Aircraft carriers na sumusuporta sa labanan sa lupa.
+    answer: 1
+  - prompt: Paano nakaapekto ang komunikasyon gamit ang radyo sa estratehiya ng mga
+      mandirigma?
+    options:
+    - A) Wala itong epekto sa desisyon sa labanan.
+    - B) Mas mabilis na palitan ng impormasyon
+    - C) Pinabagal ang pagpapadala ng tulong at supplies.
+    - D) Ginamit lang bilang libangan ng mga sundalo.
+    answer: 2

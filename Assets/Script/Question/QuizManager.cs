@@ -16,6 +16,15 @@ public class QuizManager : MonoBehaviour
     private HealthCollectible currentCollectible;
     private Collider2D currentPlayer;
 
+    [Header("Result UI")]
+    [SerializeField] private GameObject resultPanel;
+    [SerializeField] private Text resultTitleText;   // TOP TEXT
+    [SerializeField] private Text resultAnswerText;  // BOTTOM TEXT
+
+    [Header("Result Images")]
+    [SerializeField] private Image happyImage;
+    [SerializeField] private Image sadImage;
+
     private void Awake()
     {
         instance = this;
@@ -35,50 +44,78 @@ public class QuizManager : MonoBehaviour
     public void ShowRandomQuestion()
     {
         quizPanel.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
 
-        // Pick a random question
         int index = Random.Range(0, database.questions.Length);
         currentQuestion = database.questions[index];
 
-        // Display question
         questionText.text = currentQuestion.prompt;
 
-        // Display options safely
         for (int i = 0; i < optionTexts.Length; i++)
         {
             if (i < currentQuestion.options.Length)
                 optionTexts[i].text = currentQuestion.options[i];
             else
-                optionTexts[i].text = "N/A";
+                optionTexts[i].text = "";
         }
 
-        // Convert 1-based Inspector answer to 0-based index
-        correctAnswerIndex = Mathf.Clamp(currentQuestion.answer - 1, 0, currentQuestion.options.Length - 1);
-        Debug.Log("Correct Answer Index: " + correctAnswerIndex);
+        correctAnswerIndex = Mathf.Clamp(
+            currentQuestion.answer - 1,
+            0,
+            currentQuestion.options.Length - 1
+        );
     }
 
     public void SelectAnswer(int choice)
     {
-
-        Debug.Log("Player selected option index: " + choice);
-        Debug.Log("Correct answer index: " + correctAnswerIndex);
-        Debug.Log("Is Correct? " + (choice == correctAnswerIndex));
         quizPanel.SetActive(false);
-        Time.timeScale = 1;
 
         HealthCollectible tempCollectible = currentCollectible;
         currentCollectible = null;
 
+        string correctAnswerText =
+            currentQuestion.options[correctAnswerIndex];
+
         if (choice == correctAnswerIndex)
         {
+            ShowResult(true, correctAnswerText);
+
             if (tempCollectible != null)
                 tempCollectible.OnCorrectAnswer(currentPlayer);
         }
         else
         {
+            ShowResult(false, correctAnswerText);
+
             if (tempCollectible != null)
                 tempCollectible.OnWrongAnswer();
         }
+    }
+
+    // ✅ RESULT DISPLAY
+    private void ShowResult(bool isCorrect, string correctAnswer)
+    {
+        resultPanel.SetActive(true);
+        Time.timeScale = 0f;
+
+        if (isCorrect)
+        {
+            resultTitleText.text = "TAMA ANG SAGOT!";
+            resultAnswerText.text = "Magaling! Tama ang sagot mo.";
+            happyImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            resultTitleText.text = "MALI ANG SAGOT!";
+            resultAnswerText.text = "Tamang Sagot:\n" + correctAnswer;
+            sadImage.gameObject.SetActive(true);
+        }
+    }
+
+    // BUTTON FUNCTION
+    public void CloseResultPanel()
+    {
+        resultPanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
