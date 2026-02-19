@@ -98,6 +98,10 @@ public class QuizManager : MonoBehaviour
         resultPanel.SetActive(true);
         Time.timeScale = 0f;
 
+        happyImage.gameObject.SetActive(false);
+        sadImage.gameObject.SetActive(false);
+        
+
         if (isCorrect)
         {
             resultTitleText.text = "TAMA ANG SAGOT!";
